@@ -1,0 +1,223 @@
+ *{  
+    padding:0;  
+    margin: 0;  
+    box-sizing: border-box;  
+}  
+.navbar-brand{  
+    font-size: 2rem;  
+    color: black;  
+    font-family: "Pacifico", cursive;  
+}
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2e8b57;
+  transform: scale(1.05);
+}
+
+.navbar-brand:hover{
+color:rgb(6, 189, 76);
+}
+.nav-link{
+margin-right:10px;
+margin-left: 10px;
+color:black;
+text-transform: uppercase;
+font-family: "Shadows Into Light", cursive;
+}
+.nav-link:hover{
+color:rgb(6, 189, 76);
+}
+.search{
+height:40px;
+width:80%;
+border-radius:60px;
+outline:none;
+margin-right: -35px;
+font-family: "Shadows Into Light", cursive;
+border: 2px solid rgb(6, 189, 76);
+
+}
+.btn0{
+height:40px;
+width:40%;
+outline:none;
+border:none;
+background: rgb(6, 189, 76);
+color:white;
+font-family: "Shadows Into Light", cursive;
+font-weight: 700;
+border-radius: 60px;
+}
+.main{
+background-image: url("images/organic.jpg") ;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+background-position: 50% 50%;
+width: 100%;
+animation: fadeIn 1s ease-in;
+}
+.main h1{
+font-size: 4rem;
+font-weight: 700;
+font-family: "Shadows Into Light", cursive;
+animation: slideIn 1.2s ease-out;
+}
+.btn1{
+height:45px;
+width:35%;
+border:none;
+outline: none;
+background-color: rgb(6, 189, 76);
+color: white;
+font-weight: 700;
+border-radius: 60px;
+transition: 0.4s ease;
+}
+.btn1:hover{
+background-color:rgb(6, 75, 32) ;
+transform: translateY(-5px);
+}
+h1{
+font-weight: 700;
+}
+.new img {
+  transition: transform 0.4s ease;
+}
+
+.new img:hover {
+  transform: scale(1.2);
+}
+
+.new h6 {
+  margin-top: 10px;
+  color: #2e8b57;
+  font-weight: 600;
+  animation: fadeIn 1s ease-in-out;
+}
+.card:hover{
+box-shadow: -2px -1px 25px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 25px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 25px -8px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+.product .card {
+  border: none;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.product .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(46, 139, 87, 0.2);
+}
+.shop .card {
+  border: none;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.shop .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(46, 139, 87, 0.2);
+}
+.apple{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/apple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80vh;
+    width:100%;
+}
+.apple h1{
+    font-family: "Pacifico", cursive;
+
+}
+.apple h6{
+    font-family: "Shadows Into Light", cursive;
+}
+.news{
+    background-color: black;
+    color:white;
+
+}
+.btn2{
+    height:45px;
+    width:100px;
+    background: white;
+    margin-left: -10px;
+    border:2px solid white;
+    font-weight:600;
+}
+.news input{
+    height:45px;
+    width:55%;
+    border:2px solid white;
+    outline:none;
+    background: black;
+    color:white;
+    margin-top:20px;
+    font-weight:600;
+}
+.news::placeholder{
+    color:white;
+
+}
+.news p{
+    margin:0;
+}
+.fa-brands{
+    font-size:2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+} 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 992px) {
+  .main h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .btn1, .btn0, .btn2 {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .news input {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
+.main {
+    text-align: center;
+  }
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .main h1 {
+    font-size: 1.8rem;
+  }
+.product .card, .shop .card {
+    margin-bottom: 20px;
+  }
+}
